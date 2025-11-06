@@ -1,0 +1,10 @@
+1|Which Linux command is used to display the contents of a file?|A. cat|B. touch|C. grep|D. chmod|0
+2|On Debian-based Linux distributions, what command is used for its main package manager?|A. pacman|B. dnf|C. apt|D. emerge|2
+3|In case the user want to check which directory they are currently in, which Linux command is used to accomplish that task?|A. whoami|B. pwd|C. su|D. cd|1
+4|In case the user want to run the command with substitude user or group, or run as root, which Linux command is used to accomplish that task?|A. whoami|B. pwd|C. su|D. cd|2
+5|Which preinstalled Linux command is used to compile C language program?|A. python3|B. nano|C. bash|D. gcc|3
+6|Which Linux command is used to manage Linux kernel's modules?|A. modprobe|B. systemctl|C. shutdown|D. defaults|0
+7|Which Linux command is used to handle the character stream by duplicating its input?|A. tree|B. tee|C. ls|D. tty|1
+8|With 'chmod' command, which option is used to make a file executable?|A. +r|B. +w|C. +rw|D. +x|3
+9|What does the pwd' command do?|A.Print the current logged in user|B. Create a new file|C. Print a current working directory|D. Create a new directory|2
+10|What keyboard shortcut to exit a shell session, or logging out of a remote shell session?|A. Ctrl + A|B. Ctrl + B|C. Ctrl + C|D. Ctrl + D|3
