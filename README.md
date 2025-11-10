@@ -1,6 +1,8 @@
-# CPE100-01-2568-Project
+# TuxQuiz, a Linux/Unix command quiz
 
-## Linux/Unix command quiz
+---
+
+This project is made as a final project for CPE100 - Computer Programming for Engineers, semester 1 academic year 2025.
 
 ## Member
 
