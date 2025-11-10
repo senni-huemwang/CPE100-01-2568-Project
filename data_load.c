@@ -3,10 +3,8 @@
 #include <string.h>
 #include "data_structs.h"
 
-
 /**
- * @brief Attempts to load questions from the defined QUESTION_FILENAME into the quiz bank array.
- * * This function performs the critical file processing using manual string parsing (no strtok).
+ * @brief Attempts to load questions from the questions file into the quiz bank array.
  * 1. Opens the file.
  * 2. Reads the file line by line.
  * 3. Manually parses the pipe-separated data fields.
@@ -17,18 +15,17 @@
  */
 int load_questions(Question quiz_bank[]) {
     FILE *file = NULL;
-    char line[MAX_QUESTION_LEN * 5]; // Buffer large enough for one full line
+    char line[MAX_QUESTION_LEN * 5];
     int question_count = 0;
 
     // 1. Open the File
     file = fopen(DATA_FILE_PATH, "r");
     if (file == NULL) {
-        perror("Error opening questions.txt");
-        printf("🚨 Critical Error: Could not open the question bank file '%s'.\n", QUESTION_FILENAME);
+        printf("Error: Could not open the question bank file '%s'.\n", QUESTION_FILENAME);
         return 0;
     }
 
-    printf("✅ Success: Opened '%s' file for loading.\n", QUESTION_FILENAME);
+    printf("Success: Opened '%s' file for loading.\n", QUESTION_FILENAME);
 
     // 2. Read the file line by line
     while (fgets(line, sizeof(line), file) != NULL) {
