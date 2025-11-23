@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <ctype.h>
+#include <time.h>
 #include "data_structs.h"
 #include "quiz_engine.h"
+#include "logging.h"
 
 int check_answer(char user_input, int correct_index) {
     // Convert input to uppercase for case-insensitive checking (A/a, B/b, etc.)
@@ -59,6 +61,7 @@ void run_quiz(Question quiz_bank[], int total_questions) {
     printf("\n\n--- Quiz Finished! ---\n");
     printf("Your final score is: %d out of %d (%.2f%%)\n",
            score, total_questions, (float)score * 100 / total_questions);
+    log_score(score,total_questions);
 
     printf("\n--- Great work! You finished the quiz! ---\n");
 }
