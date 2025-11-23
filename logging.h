@@ -9,21 +9,6 @@
 // -----------------------------------------------------------------------------
 #define ENABLE_LOGGING 
 
-/**
- * @brief Macro to get the current formatted timestamp for logging.
- * @return A static char array containing the time string [YYYY-MM-DD HH:MM:SS].
- */
-static inline const char* get_timestamp() {
-    static char buffer[20];
-    time_t now = time(NULL);
-    struct tm *tm_struct = localtime(&now);
-    
-    // Format the time as YYYY-MM-DD HH:MM:SS
-    strftime(buffer, sizeof(buffer), "%Y-%m-%d %H:%M:%S", tm_struct);
-    return buffer;
-}
-
-
 // --- Logging Macros ---
 
 #ifdef ENABLE_LOGGING
