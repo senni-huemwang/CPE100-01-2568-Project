@@ -43,9 +43,14 @@
     #define LOG_INFO(fmt, ...) (void)0
     #define LOG_ERROR(fmt, ...) (void)0
     #define LOG_DEBUG(fmt, ...) (void)0
+
 #endif
 
+// Function prototype for the timestamp function
+char* get_timestamp();
+
 #endif // LOGGING_H
+
 ```
 eof
 
