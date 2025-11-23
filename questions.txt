@@ -6,5 +6,5 @@
 6|Which Linux command is used to manage Linux kernel's modules?|A. modprobe|B. systemctl|C. shutdown|D. defaults|0
 7|Which Linux command is used to handle the character stream by duplicating its input?|A. tree|B. tee|C. ls|D. tty|1
 8|With 'chmod' command, which option is used to make a file executable?|A. +r|B. +w|C. +rw|D. +x|3
-9|What does the pwd' command do?|A.Print the current logged in user|B. Create a new file|C. Print a current working directory|D. Create a new directory|2
+9|What does the pwd' command do?|A. Print the current logged in user|B. Create a new file|C. Print a current working directory|D. Create a new directory|2
 10|What keyboard shortcut to exit a shell session, or logging out of a remote shell session?|A. Ctrl + A|B. Ctrl + B|C. Ctrl + C|D. Ctrl + D|3

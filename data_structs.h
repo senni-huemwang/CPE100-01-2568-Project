@@ -5,7 +5,7 @@
 #define MAX_OPTION_LEN 128
 #define NUM_OPTIONS 4
 #define MAX_QUESTIONS 50
-#define DATA_FILE_PATH "../questions.txt"
+#define DATA_FILE_PATH "questions.txt"
 #define QUESTION_FILENAME "questions.txt"
 
 typedef struct {

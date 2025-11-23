@@ -1,3 +1,5 @@
 REPORT.md
 # ignoring docs folder for now
 /docs
+# ignore test file
+a.out
