@@ -3,16 +3,8 @@
 #include <string.h>
 #include "data_structs.h"
 
-/**
- * @brief Attempts to load questions from the questions file into the quiz bank array.
- * 1. Opens the file.
- * 2. Reads the file line by line.
- * 3. Manually parses the pipe-separated data fields.
- * 4. Fills the Question struct array.
- * 5. Closes the file.
- * * @param quiz_bank The array of Question structs to be populated.
- * @return The total number of questions successfully loaded, or 0 on error.
- */
+ // Attempts to load questions from the questions file into the quiz bank array.
+
 int load_questions(Question quiz_bank[]) {
     FILE *file = NULL;
     char line[MAX_QUESTION_LEN * 5];
@@ -113,16 +105,10 @@ int load_questions(Question quiz_bank[]) {
         free(temp_line);
     }
 
-    // 4. Close the File
     fclose(file);
     return question_count;
 }
 
-/**
- * @brief Displays a single question in the required format for the user.
- * @param q A pointer to the Question struct to be displayed.
- * @param q_number The number of the question in the quiz (e.g., 1, 2, 3...).
- */
 void display_question(const Question *q, int q_number) {
     printf("\n------------------------------------------------\n");
     printf("(%d). %s\n", q_number, q->question);
