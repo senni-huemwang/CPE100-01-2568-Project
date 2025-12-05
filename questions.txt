@@ -1,10 +1,20 @@
-1|Which Linux command is used to display the contents of a file?|A. cat|B. touch|C. grep|D. chmod|0
-2|On Debian-based Linux distributions, what command is used for its main package manager?|A. pacman|B. dnf|C. apt|D. emerge|2
-3|In case the user want to check which directory they are currently in, which Linux command is used to accomplish that task?|A. whoami|B. pwd|C. su|D. cd|1
-4|In case the user want to run the command with substitude user or group, or run as root, which Linux command is used to accomplish that task?|A. whoami|B. pwd|C. su|D. cd|2
-5|Which preinstalled Linux command is used to compile C language program?|A. python3|B. nano|C. bash|D. gcc|3
-6|Which Linux command is used to manage Linux kernel's modules?|A. modprobe|B. systemctl|C. shutdown|D. defaults|0
-7|Which Linux command is used to handle the character stream by duplicating its input?|A. tree|B. tee|C. ls|D. tty|1
-8|With 'chmod' command, which option is used to make a file executable?|A. +r|B. +w|C. +rw|D. +x|3
-9|What does the pwd' command do?|A. Print the current logged in user|B. Create a new file|C. Print a current working directory|D. Create a new directory|2
-10|What keyboard shortcut to exit a shell session, or logging out of a remote shell session?|A. Ctrl + A|B. Ctrl + B|C. Ctrl + C|D. Ctrl + D|3
+1|In Linux/UNIX, what do "." (single dot) and ".." (double dot) represent in a directory?|A. Hidden file and System file|B. Current directory and Parent directory|C. Parent directory and Current directory|D. Root directory and Home directory|1
+2|Which statement accurately describes an "Absolute Path"?|A. It defines a file location relative to the current working directory.|B. It usually starts with "../" or "./".|C. It defines the full path starting from the Root ("/") directory.|D. It defines paths only for files located in the Home directory.|2
+3|Which "ls" option is required to view files starting with a dot (e.g., .bashrc)?|A. ls -l|B. ls -h|C. ls -a|D. ls -R|2
+4|What is a key difference between a Hard Link and a Symbolic Link (Soft Link)?|A. Hard Links can cross partitions, but Soft Links cannot.|B. If the original file is deleted, a Hard Link remains accessible, but a Soft Link becomes broken.|C. Soft Links always have the same file size as the original, whereas Hard Links are smaller.|D. Hard Links use a different inode from the original, while Soft Links share the same inode.|1
+5|If you run "chmod 751 file.txt", what permissions does the "Group" have?|A. Read, Write, Execute (rwx)|B. Read, Execute (r-x)|C. Write, Execute (-wx)|D. Execute only (--x)|1
+6|What is the command "chown user:group file.txt" used for?|A. Changing file permissions.|B. Renaming the file.|C. Changing the file Owner and the Group owner.|D. Moving the file to the user's home directory.|2
+7|What is the main difference between "sudo" and "su"?|A. sudo permanently switches the user, while su runs a single command.|B. sudo executes a single command with root privileges (then returns), while su switches the user account session.|C. sudo does not require a password, but su always does.|D. Both commands function exactly the same.|1
+8|How do ">" and ">>" differ when redirecting output?|A. ">" is for error logs, ">>" is for standard output.|B. ">" appends data, ">>" overwrites data.|C. ">" overwrites existing data, ">>" appends to existing data.|D. ">" accepts input, ">>" sends output.|2
+9|Which command searches for the string "Error" in all files within the current directory and subdirectories (recursively)?|A. grep -i "Error" *|B. grep -r "Error" .|C. find . "Error"|D. cat * | grep "Error"|1
+10|What is the primary use case for "tail -f /var/log/syslog"?|A. Viewing the first 10 lines of the file.|B. Monitoring the log file in real-time as new lines are added.|C. Searching for typos in the file.|D. Deleting the end of the file.|1
+11|Which command is used to count the number of lines in a file?|A. lc file.txt|B. count -l file.txt|C. wc -l file.txt|D. lines file.txt|2
+12|How do you delete a file named "-data.txt" (starting with a dash) without causing an error?|A. rm -data.txt|B. rm "-data.txt"|C. rm -- -data.txt|D. rm \-data.txt|2
+13|What information does "ps aux" provide?|A. Free hard disk space.|B. A snapshot of all currently running processes.|C. Network interface status.|D. Command history.|1
+14|To immediately "Force Kill" a frozen program using its PID, which option should be used?|A. kill -9 <PID>|B. kill -15 <PID>|C. kill -f <PID>|D. kill --force <PID>|0
+15|What happens when you press "Ctrl + Z" while a program is running in the terminal?|A. It terminates the program immediately.|B. It sends an End of File (EOF) signal.|C. It suspends the program and moves it to the background.|D. It clears the terminal screen.|2
+16|Which statement correctly distinguishes "du" from "df"?|A. du shows free disk space; df shows file size.|B. du estimates file space usage; df reports file system disk space usage.|C. du monitors RAM; df monitors Disk.|D. Both commands provide the exact same output.|1
+17|What is the main purpose of "top" or "htop"?|A. To display the directory tree structure.|B. To display real-time system resource usage (CPU, RAM, Processes).|C. To show the top 10 logged-in users.|D. To display network topology.|1
+18|What does the pipe symbol "|" do in the command line?|A. Runs two commands simultaneously.|B. Takes the output of the first command and uses it as input for the second command.|C. Stops execution if the first command errors.|D. Used for writing comments.|1
+19|In the command "tar -xzvf file.tar.gz", what does the "z" flag indicate?|A. Verbose output (show files).|B. Extract files.|C. Filter the archive through gzip.|D. Filter the archive through bzip2.|2
+20|In Vi/Vim Editor, what command is used to Save and Quit?|A. :exit|B. Ctrl + S then Ctrl + Q|C. :wq|D. :save|2
