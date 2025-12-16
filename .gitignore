@@ -1,5 +1,5 @@
 REPORT.md
-# ignoring docs folder for now
-/docs
+# ignoring build folder for now
+/build/*
 # ignore test file
 a.out

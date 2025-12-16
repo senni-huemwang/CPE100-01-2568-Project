@@ -10,7 +10,6 @@ int load_questions(Question quiz_bank[]) {
     char line[MAX_QUESTION_LEN * 5];
     int question_count = 0;
 
-    // 1. Open the File
     file = fopen(DATA_FILE_PATH, "r");
     if (file == NULL) {
         printf("Error: Could not open the question bank file '%s'.\n", QUESTION_FILENAME);
@@ -19,7 +18,6 @@ int load_questions(Question quiz_bank[]) {
 
     printf("Success: Opened '%s' file for loading.\n", QUESTION_FILENAME);
 
-    // 2. Read the file line by line
     while (fgets(line, sizeof(line), file) != NULL) {
 
         // Skip empty lines or lines that would exceed the array limit
@@ -27,7 +25,6 @@ int load_questions(Question quiz_bank[]) {
             continue;
         }
 
-        // Remove trailing newline/carriage return characters
         line[strcspn(line, "\n\r")] = 0;
 
         // Make a mutable copy of the line to work with
@@ -37,12 +34,12 @@ int load_questions(Question quiz_bank[]) {
             break;
         }
 
-        char *current_pos = temp_line;  // Pointer to the start of the current field
-        char *delimiter_pos = NULL;     // Pointer to the next '|'
+        char *current_pos = temp_line;
+        char *delimiter_pos = NULL;
         int field_count = 0;
         Question *current_q = &quiz_bank[question_count];
 
-        // 3. Loop through all 7 expected fields (ID, Q, A, B, C, D, Index)
+        // Loop through all 7 expected fields (ID, Q, A, B, C, D, Index)
         while (field_count < 7) {
 
             // Use strchr to find the next pipe delimiter '|'

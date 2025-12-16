@@ -6,7 +6,7 @@
 void log_score(int score, int total_questions) {
     FILE *file = NULL;
 
-    // --- 1. Get Current Date and Time ---
+    // Get Current Date and Time
     time_t timer;
     char buffer[MAX_LOG_ENTRY_LEN];
     struct tm* tm_info;
@@ -16,7 +16,7 @@ void log_score(int score, int total_questions) {
 
     strftime(buffer, MAX_LOG_ENTRY_LEN, "%Y-%m-%d %H:%M:%S", tm_info);
 
-    // --- 2. Open File in APPEND Mode ---
+    // Open File in APPEND Mode
     file = fopen(LOG_FILENAME, "a");
     if (file == NULL) {
         // If file open fails, print to console instead of crashing the program
@@ -26,8 +26,7 @@ void log_score(int score, int total_questions) {
         return;
     }
 
-    // --- 3. Write Data and Close ---
-    // Log entry format: [YYYY-MM-DD HH:MM:SS] Score: X/Y (Z.ZZ%)
+    // Write Data - Log entry format: [YYYY-MM-DD HH:MM:SS] Score: X/Y (Z.ZZ%)
     fprintf(file, "[%s] Score: %d/%d (%.2f%%)\n",
         buffer,
         score,
